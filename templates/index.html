@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='estilo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css') }}">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div class="primary-div">
+        <form method="POST" action="" class="form1">
+            <center id="center">
+                <h1>FORMULÁRIO</h1>
+            <div class="container">
+                <label for="">nome</label>
+                <input type="text" name="name" class="select"><br>
+            </div>
+
+            <div class="container">
+                <label for="">Departamento</label>
+                <input type="text" name="Departamento" class="select"> <br> 
+            </div>
+
+             <div class="container">
+                <label for="">dataResposta</label>
+                 <input type="date" name="dtresposta" class="select"> <br>
+             </div>
+
+            <div class="container">
+                <label for=""> quantidadeRealizada</label>
+                <input type="number" name="qtrealizada" class="select"> <br>
+            </div>
+
+             <div class="container">
+                <label for="">quantidadeReal </label>
+                <input type="number" name="qtreal" class="select"> <br>
+             </div>
+
+            <div class="container">
+                <label for="">valorProvisionado</label>
+                <input type="number" name="valorP" class="select"> <br>
+            </div>
+
+             <div class="container">
+                <label for="">valorUtilizado</label>
+                <input type="number" name="valorU" class="select"> <br>
+             </div>
+
+            <div class="container">
+                <label for="">ResultadoFinal</label>
+                 <input type="text" name="rfinal" class="select"> <br>
+
+            </div>
+             <div class="container">
+                <label for="">Observacao</label>
+                 <input type="text" name="obs" class="select">
+             </div>
+             
+             <input type = "submit" class="button">
+            
+    
+    
+            </center>
+    
+    
+        </form>
+    </div>
+</body>
+</html>
