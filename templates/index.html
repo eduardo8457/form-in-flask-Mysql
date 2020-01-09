@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static',filename='estilo.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/bootstrap.min.css') }}">
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
     <title>Formulário</title>
 </head>
@@ -22,7 +22,12 @@
 
             <div class="container">
                 <label for="">Departamento</label>
-                <input type="text" name="Departamento" class="select"> <br> 
+                    <select id = "myList" name="Departamento" class="select">
+                        <option value = "1">one</option>
+                        <option value = "2">two</option>
+                        <option value = "3">three</option>
+                        <option value = "4">four</option>
+                    </select> <br> 
             </div>
 
              <div class="container">
