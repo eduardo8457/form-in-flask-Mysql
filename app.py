@@ -34,7 +34,7 @@ def index():
         cur.execute("INSERT INTO tbquestionario(nome, Departamento, dataResposta, quantidadeRealizada,quantidadeReal, valorProvisionado, valorUtilizado, ResultadoFinal, Observacao) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", (nome, Departamento, dataResposta, quantidadeRealizada,quantidadeReal, valorProvisionado, valorUtilizado, ResultadoFinal, Observacao))
         mysql.connection.commit()
         cur.close()
-        return 'success'
+        return 'Formulário Conluido com Sucesso'
     return render_template('index.html')
 
 
