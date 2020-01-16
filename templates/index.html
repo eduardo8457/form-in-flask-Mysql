@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static',filename='estilo.css') }}">
-    <link rel="stylesheet" href="{{url_for('static', filename= 'css/bootstrap.min.css') }}">
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src=" {{url_for('static', filename='script.js')}}"></script>
     <title>Formulário</title>
 </head>
 
 <body>
 
     <div class="primary-div">
-        <form method="POST" action="" class="form1">
+        <form method="POST" action="#" name="formulario1" class="form1">
 
             <h1>FORMULÁRIO</h1>
             <div class="container">
@@ -23,13 +22,20 @@
             </div>
 
             <div class="container">
-                <label for="">Departamento</label>
-                <select id="myList" name="Departamento" class="select1">
-                        <option value="1">Educador</option>
-                        <option value="2">Desenvolvedor</option>
-                        <option value="3">Taxista</option>
-                        <option value="4">Jogador</option>
-                    </select> <br>
+                <label for="">Objetos</label>
+                <select id="myList" name="Departamento" onchange="menuDinamico()" class="select1">
+                        <option value="0">Selecione</option>
+                        <option value="1">Desenvolvedor</option>
+                        <option value="2">idiomas</option>
+                        <option value="3">linguagens de dominio</option>
+                        <option value="4">Frameworks</option>
+                    </select> <br>    	 
+            </div>
+            <div class="container">
+                <label for="">Itens do Objeto</label>
+                <select class="select1" name="dinamico" name="Departamento1">
+                    <option value="-">Selecione</option>
+                </select> 
             </div>
 
             <div class="container">
